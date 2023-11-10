@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07/11</title>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <section style="background-color: aquamarine; text-align: center; padding: 15px;">
+        Javascript Aula
+    </section>
+    <div id="botoes" style="display: flex; justify-content: space-around;">
+        <input type="button" value="botao 1" style="height: 70px;" onclick="btn1()">
+        <input type="button" value="botao 2" style="height: 70px;" onclick="btn2()">
+        <input type="button" value="botao 3" style="height: 70px;" onfocus="btn3()">
+        <input type="button" value="botao 4" style="height: 70px;" onmouseover="btn4()">
+    </div>
+    <div id="resultados" style="background-color: antiquewhite; text-align: center;">
+        <h1>Resultados</h1>
+        <p id="saida"></p>
+    </div>
+
+    <hr>
+    <h1>Datas</h1>
+    <input type="text" id="dia">
+    <input type="button" value="Pegar Dia" onclick="getDia()">
+    <input type="button" value="Pegar Data" onclick="exibirDataAtual()">
+    <input type="button" value="dataFormatada" id="dataFormatada" onclick="dataFormatada()">
+
+    <h1>Diferença entre datas</h1>
+    <input type="date" id="data1">
+    <input type="date" id="data2">
+    <input type="button" onclick="calcularDiferenca()" value="Calcular">
+    <p id="diferenca"></p>
+
+    <hr>
+    <h1>Selection</h1>
+    frutos:
+    <select id="selecaoItens" onchange="mostrarFruta()">
+        <option value="item1">Manga</option>
+        <option value="item2">Pêra</option>
+        <option value="item3">Pequi</option>
+    </select>
+    <p id="itemSelecionado"></p>
+
+    <input type="text" id="texto">
+    <input type="button" value="Add" onclick="addOpcao()">
+
+    <select id="selecaoSemana">
+        <option value="" disabled selected></option>
+        <option value="domingo">Domingo</option>
+        <option value="segunda">Segunda</option>
+        <option value="terca">Terça</option>
+        <option value="quarta">Quarta</option>
+    </select>
+    <input type="button" value="Remover" onclick="removerOpcao()">
+
+    <hr>
+    <h1>Formatação CSS + Javascript</h1>
+    <div id="elemento" style="background-color: antiquewhite; color: darkblue;">
+        Elemento Exemplo
+    </div>
+    <br>
+    <input type="button" value="Mudar Cor" onclick="mudarFormatacao()">
+</body>
+</html>
